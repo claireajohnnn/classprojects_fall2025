@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wicked — Movie vs. Broadway (Overview)</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="movie-page">
+  <header>
+    <div class="site-wrap">
+      <div class="brand">
+        <img src="images/broadway-poster.jpeg" alt="Wicked Broadway icon (used as site logo)" class="logo-img" />
+        <div>
+          <span class="logo">Wicked</span>
+          <p class="tagline">Movie vs. Broadway — An Overview</p>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Overview</a></li>
+          <li><a href="cast-and-songs.html">Stage & Songs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-wrap">
+    <h1 class="page-title">Wicked: Movie vs. Broadway</h1>
+    <h2 class="page-subtitle">Same story, different magic</h2>
+
+    <!-- UPDATED IMAGE BLOCK (movie focus) -->
+   <section class="section-card">
+  <div class="hero two-col">
+    <figure class="media">
+      <img class="hero-img"
+           src="images/broadway-poster.jpeg"
+           alt="Classic Wicked Broadway poster—Elphaba and Glinda whispering" />
+      <figcaption>Original Broadway marketing—iconic green & black palette.</figcaption>
+    </figure>
+
+    <figure class="media">
+      <picture>
+        <!-- AVIF first -->
+        <source type="image/avif" srcset="images/elphie-galinda-mirror.avif" />
+        <!-- Fallback if AVIF unsupported or file missing -->
+        <img class="hero-img"
+             src="images/broadway-poster.jpeg"
+             alt="Broadway motif of Glinda whispering to Elphaba" />
+      </picture>
+      <figcaption>Broadway motif (AVIF) with safe JPEG fallback.</figcaption>
+    </figure>
+  </div>
+</section>
+
+    <hr class="rule" />
+
+    <section class="section-grid">
+      <article class="section-card">
+        <h3>How the film reimagines Oz</h3>
+        <p>
+          The movie adaptation of <em>Wicked</em> leverages cinematic tools to expand the world beyond the stage. Sweeping camera moves,
+          large-scale sets, and CGI effects open up Oz in ways that live theater cannot. Close-ups highlight emotional details,
+          while advanced sound mixing makes the music feel cinematic and immersive. The pacing of the film is adjusted through
+          editing, allowing scenes to move quickly or linger for dramatic effect. Character expressions and world-building come
+          alive with more subtlety, pulling audiences deeper into the magic of the story. The film makes Oz feel larger,
+          darker, and more detailed while still keeping the heart of Elphaba and Glinda’s friendship at its core.
+        </p>
+      </article>
+
+      <article class="section-card">
+        <h3>What stays the same</h3>
+        <p>
+          At its heart, the movie preserves the central themes of friendship, identity, and perception that made the musical
+          iconic. The dynamic between Glinda and Elphaba continues to anchor the story. Songs like “Defying Gravity” and
+          “For Good” remain powerful emotional milestones, even with new cinematic presentation. Colors, costumes, and music
+          echo the Broadway production while adding fresh cinematic touches. The narrative continues to ask questions about
+          morality, bias, and who gets to define “good” and “wicked.” The essence of the story remains intact, ensuring both
+          longtime fans and newcomers experience the same core message.
+        </p>
+      </article>
+    </section>
+
+    <hr class="rule" />
+
+    <section class="section-card">
+      <h3>Quick compare (movie-leaning)</h3>
+      <ul class="nice-list two-col-list">
+        <li>Cinematic scale: sweeping landscapes and CG effects.</li>
+        <li>Close-up acting: adds nuance to performances.</li>
+        <li>Editing: controls pacing between fast and slow scenes.</li>
+        <li>Immersive sound mix: creates a full theater experience.</li>
+      </ul>
+
+      <div class="related">
+        <a class="ext" href="https://wickedthemusical.com/" target="_blank" rel="noopener">Official Wicked Site</a>
+        <a class="ext" href="https://en.wikipedia.org/wiki/Wicked_(musical)" target="_blank" rel="noopener">Wicked on Wikipedia</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="site-wrap">
+      <p>&copy; <span id="year"></span> Wicked Comparison Project • Educational use</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
